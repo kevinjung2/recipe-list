@@ -1,23 +1,50 @@
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .card {
-	color: #cd3bea;
-	border: 3px solid #3c1251;
-	background: linear-gradient(95deg, #64007f, #4D194D);
-	border-radius: 5svh;
-	padding: 3svh;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	color: #F64853;
+	border: 3px solid #F64853;
+	background: #1D1E1E;
 	margin: 3svh;
-	box-shadow: .25svh .25svh 4svh #cd3bea;
+	width: 300px;
+	height: 400px;
+	box-shadow: .25svh .25svh 4svh -2svh #FAE36B;
+	border-radius: 5px;
 }
 
 .recipe-title {
-	padding-top: 0;
+	position: absolute;
+	width: 100%;
+	top: 4px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.recipe-time {
+	position: absolute;
+	width: 100%;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .recipe-img {
-	border: 3px solid #3c1251;
-	border-radius: 4svh;
-	box-shadow: .25svh .25svh 4svh #cd3bea;
-
+	position: relative;
+	top: 0;
+	transition: top .5s ease-in-out;
+	-webkit-transition: top .5s ease-in-out;
 }
+
+.recipe-img:hover {
+	top: 80px;
+}
+
 
 /* gradient start: #3E1F47 */
 /* gradient end: #4D194D */

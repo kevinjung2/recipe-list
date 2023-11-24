@@ -1,7 +1,9 @@
 import './Navbar.css'
+import useWindowSize from '../hooks/getWindowSize'
 
 function Navbar(props: { categories: string[], selectedCategory: string, setSelectedCategory: (category: string) => void}) {
 	const { categories, selectedCategory, setSelectedCategory } = props
+	const window = useWindowSize()
 	return (
 		<>
 			<div className='navbar-background'>
@@ -11,6 +13,7 @@ function Navbar(props: { categories: string[], selectedCategory: string, setSele
 				<div className='nav-start'>
 					<h2 onClick={(e) => {e.preventDefault(); setSelectedCategory('')}}>ChefKev's Recipes</h2>
 				</div>
+				{window.width > 1100 ?
 				<div className='nav-end'>
 					{categories.map(category => {
 						if (selectedCategory === category) {
@@ -20,7 +23,9 @@ function Navbar(props: { categories: string[], selectedCategory: string, setSele
 							return (<button className='nav-categories' onClick={(e) => {e.preventDefault(); setSelectedCategory(category)}}>{category}</button>)
 						}
 					})}
-				</div>
+				</div> :
+				<div className='hamburger'></div>
+				}
 			</div>
 
 		</>
