@@ -1,0 +1,24 @@
+.card {
+	color: #cd3bea;
+	border: 3px solid #3c1251;
+	background: linear-gradient(95deg, #64007f, #4D194D);
+	border-radius: 5svh;
+	padding: 3svh;
+	margin: 3svh;
+	box-shadow: .25svh .25svh 4svh #cd3bea;
+}
+
+.recipe-title {
+	padding-top: 0;
+}
+
+.recipe-img {
+	border: 3px solid #3c1251;
+	border-radius: 4svh;
+	box-shadow: .25svh .25svh 4svh #cd3bea;
+
+}
+
+/* gradient start: #3E1F47 */
+/* gradient end: #4D194D */
+/* gradient dark: #272640 */

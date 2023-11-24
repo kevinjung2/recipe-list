@@ -1,0 +1,50 @@
+.navbar-background{
+	background: #1D1E1E;
+	height: 5em;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: auto auto;
+	border-bottom: 2px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to right, #FAE36B, #F64853);
+}
+
+.nav-start {
+	text-align: left;
+	padding-left: 6em;
+}
+
+.nav-end {
+	text-align: right;
+	padding-right: 1em;
+}
+
+.nav-categories {
+	height: 100%;
+	background: #1D1E1E;
+}
+
+#selected {
+	color: #FAE36B;
+	background: #272727;
+	border-color: #FAE36B;
+}
+
+.nav-categories:hover, #selected:hover{
+	color: #F64853;
+	background: #272727;
+	border-color: #F64853;
+}
+
+.nav-logo {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+.logo {
+	border-radius: 50%;
+}
