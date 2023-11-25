@@ -59,9 +59,11 @@ const categories = [
 
 function App() {
 	const [category, setCategory] = useState("");
+	const [seach, setSearch] = useState("");
+
 	return (
 		<>
-			<Navbar categories={categories} selectedCategory={category} setSelectedCategory={setCategory}/>
+			<Navbar categories={categories} selectedCategory={category} setSelectedCategory={setCategory} search={seach} setSearch={setSearch}/>
 			<div className='grid-container'>
 				{recipes.map(rec => {
 					if (category == "" || rec.category === category) {
